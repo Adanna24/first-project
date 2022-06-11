@@ -1,7 +1,7 @@
 {
   "name": "git-hub",
   "version": "0.1.0",
-  "homepage": "https://github.com/Adanna24/React-First-Project-git",
+  "homepage": "https://Adanna24.git.io/React-First-Project-git",
   "private": true,
   "dependencies": {
     "react": "^18.1.0",
