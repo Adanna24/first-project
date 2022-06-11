@@ -63,17 +63,6 @@ function Meme(prop) {
         setmemes(del)
       }
     }
-
-
-   const searchmeme = memes.filter(meme => {
-      if(prop.search === "") {
-        return meme;
-      }
-      else if ((meme.toptext.toLowerCase().includes(prop.search.toLowerCase()))){
-          return meme;
-      }
-  
-     })
   
 
   return (
@@ -125,7 +114,7 @@ function Meme(prop) {
           <div className='bottom-section'>
             <h2 className='heading'>MEMES GALLERY</h2>
             <div className='bottom-section-meme'>
-              {searchmeme.map(meme => (
+              {memes.map(meme => (
                 <div className='meme-whole'>
                   <div className='meme'>
                     {meme.toptext && <h2 className='up'>{meme.toptext}</h2>}

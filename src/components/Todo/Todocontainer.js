@@ -101,15 +101,6 @@ function Todocontainer(prop) {
     setedit(null);
     seteditext("");
   }
- const searchtext = arrange.filter((item) => {
-  if(prop.search === "") {
-    return item;
-  }
-  else if ((item.text.toLowerCase().includes(prop.search.toLowerCase()))){
-      return item;
-  }
-
- })
   return (
     <section className='todo-section'>
       <div className='container'>
@@ -123,7 +114,7 @@ function Todocontainer(prop) {
             />
           </div>
           <div className='todo-holder' key={todos.id}>
-            {searchtext.map((todo) => 
+            {arrange.map((todo) => 
               <Todo 
                 key={todo.id}
                 id={todo.id}
